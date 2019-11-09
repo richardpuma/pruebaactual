@@ -17,22 +17,7 @@ function CourseList(props) {
       <tbody>
         
            {props.courses.map(course => {
-                 
-         console.log(props);
-          return (
-       
-            <tr key={course.id}>
-      
-              <td>
-                <button
-                  className="btn btn-outline-danger"
-                  onClick={() => {
-                    //debugger;
-                    if(window.confirm("Estas Seguro que Deseas Eliminarlo?")) props.deleteCourse(course.id);
-                   
-                  }}
-                >
-                  Delete
+              
                 </button>
               </td>
               <td>
